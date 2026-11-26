@@ -4,7 +4,7 @@ compatibility_date = "2025-09-01"
 
 [vars]
 # Alamat bot (harus hostname, bukan IP mentah). Tanpa garis miring di akhir.
-ORIGIN_URL = "http://bytebynight.wispbyte.app:10772"
+ORIGIN_URL = "https://bytebynight.wispbyte.app"
 # Domain Cloudflare Pages kamu, pisahkan dengan koma. Contoh: "https://stiker.pages.dev"
 ALLOWED_ORIGINS = "https://stickerbot.pages.dev"
 # Batas spam (opsional, ini nilai default):
