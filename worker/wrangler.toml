@@ -6,7 +6,7 @@ compatibility_date = "2025-09-01"
 # Alamat bot (harus hostname, bukan IP mentah). Tanpa garis miring di akhir.
 ORIGIN_URL = "https://bot.example.com"
 # Domain Cloudflare Pages kamu, pisahkan dengan koma. Contoh: "https://stiker.pages.dev"
-ALLOWED_ORIGINS = "https://stiker.pages.dev"
+ALLOWED_ORIGINS = "https://stikerbot.pages.dev"
 # Batas spam (opsional, ini nilai default):
 # IP_COOLDOWN_SEC = "30"      jeda antar pembuatan per IP
 # IP_HOURLY = "6"             maksimal pembuatan per IP per jam
