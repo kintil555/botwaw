@@ -1,0 +1,25 @@
+name = "sound-sticker-api"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+# Alamat bot (harus hostname, bukan IP mentah). Tanpa garis miring di akhir.
+ORIGIN_URL = "https://bot.example.com"
+# Domain Cloudflare Pages kamu, pisahkan dengan koma. Contoh: "https://stiker.pages.dev"
+ALLOWED_ORIGINS = "https://stiker.pages.dev"
+# Batas spam (opsional, ini nilai default):
+# IP_COOLDOWN_SEC = "30"      jeda antar pembuatan per IP
+# IP_HOURLY = "6"             maksimal pembuatan per IP per jam
+# IP_DAILY = "20"             maksimal pembuatan per IP per hari
+# PHONE_COOLDOWN_SEC = "60"   jeda per nomor tujuan
+# PHONE_DAILY = "5"           maksimal per nomor per hari
+# UPLOAD_PER_10MIN = "8"      maksimal unggahan per IP per 10 menit
+# STRIKES_TO_BAN = "5"        pelanggaran dalam 10 menit sebelum diblokir
+# BAN_MIN = "30"              lama blokir (menit)
+
+[durable_objects]
+bindings = [{ name = "LIMITER", class_name = "Limiter" }]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Limiter"]
